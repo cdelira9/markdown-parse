@@ -38,6 +38,13 @@ public class MarkdownParseTest {
     }
 
 
+    @Test
+    public void testFile6() throws IOException {
+        Path fileName = Path.of("./test-file6.md");
+        String contents = Files.readString(fileName);
+        assertEquals(List.of("page.com"), MarkdownParse.getLinks(contents));
+    }
+
     
 
 
