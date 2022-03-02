@@ -8,7 +8,7 @@ public class MarkdownParse {
     public static ArrayList<String> getLinks(String markdown) {
         ArrayList<String> toReturn = new ArrayList<>();
         // find the next [, then find the ], then find the (, then take up to
-        // the next )
+        // the next   )
         int currentIndex = 0;
         int openParen = 0;
         int nextOpenBracket = 0;
